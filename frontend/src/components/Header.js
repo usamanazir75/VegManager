@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';  // Assuming you're using React Router
+import { Link } from 'react-router-dom'; // Assuming you're using React Router
 
 const Header = ({ isLoggedIn }) => {
   const [isOpen, setIsOpen] = useState(false); // State for mobile menu
@@ -17,10 +17,26 @@ const Header = ({ isLoggedIn }) => {
         </Link>
 
         {/* Hamburger Icon for Mobile */}
-        <button onClick={toggleMenu} className="md:hidden flex flex-col justify-center items-center space-y-1">
-          <div className={`w-8 h-1 bg-white transition-all duration-300 rounded ${isOpen ? 'transform rotate-45 translate-y-2' : ''}`}></div>
-          <div className={`w-8 h-1 bg-white transition-all duration-300 rounded ${isOpen ? 'opacity-0' : ''}`}></div>
-          <div className={`w-8 h-1 bg-white transition-all duration-300 rounded ${isOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
+        <button
+          onClick={toggleMenu}
+          className="md:hidden flex flex-col justify-center items-center space-y-1"
+          aria-label="Toggle menu" // Accessibility improvement
+        >
+          <div
+            className={`w-8 h-1 bg-white transition-transform duration-300 ease-in-out rounded ${
+              isOpen ? 'transform rotate-45 translate-y-1.5' : ''
+            }`}
+          ></div>
+          <div
+            className={`w-8 h-1 bg-white transition-opacity duration-300 ease-in-out rounded ${
+              isOpen ? 'opacity-0' : 'opacity-100'
+            }`}
+          ></div>
+          <div
+            className={`w-8 h-1 bg-white transition-transform duration-300 ease-in-out rounded ${
+              isOpen ? 'transform -rotate-45 -translate-y-1.5' : ''
+            }`}
+          ></div>
         </button>
 
         {/* Navbar Links */}
