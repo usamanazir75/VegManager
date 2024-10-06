@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -13,9 +14,11 @@ const Home = () => {
         <p className="text-lg md:text-xl text-green-800">
         اپنا کاروبار منظم کریں، لیجرز دیکھیں، فروخت کو ٹریک کریں، اور مزید خصوصیات کو استعمال کریں۔
         </p>
+        <Link to="/contact">
         <button className="mt-10 bg-green-700 text-white py-3 px-6 rounded-md hover:bg-green-800 transition-all">
           مزید معلومات حاصل کریں
         </button>
+        </Link>
       </section>
 
       {/* Features Section */}
