@@ -25,16 +25,16 @@ const Home = () => {
       <section className="bg-green-200 py-12">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
           <div className="bg-white p-6 shadow-lg rounded-md">
-            <h3 className="text-xl md:text-2xl font-bold text-green-700">لیجر منیجمنٹ</h3>
-            <p className="mt-4 text-sm md:text-base">ٹرانسپورٹ، مقدار، اور خریداروں کی تفصیلات کا مکمل ریکارڈ محفوظ کریں۔</p>
+            <h3 className="text-xl md:text-2xl font-bold text-green-700 text-center">لیجر منیجمنٹ</h3>
+            <p className="mt-4 text-sm md:text-base text-center">ٹرانسپورٹ، مقدار، اور خریداروں کی تفصیلات کا مکمل ریکارڈ محفوظ کریں۔</p>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-md">
-            <h3 className="text-xl md:text-2xl font-bold text-green-700">فروخت کی تفصیلات</h3>
-            <p className="mt-4 text-sm md:text-base">تمام فروخت کو ٹریک کریں اور ادائیگیوں کا حساب کریں۔</p>
+            <h3 className="text-xl md:text-2xl font-bold text-green-700 text-center">فروخت کی تفصیلات</h3>
+            <p className="mt-4 text-sm md:text-base text-center">تمام فروخت کو ٹریک کریں اور ادائیگیوں کا حساب کریں۔</p>
           </div>
           <div className="bg-white p-6 shadow-lg rounded-md">
-            <h3 className="text-xl md:text-2xl font-bold text-green-700">انوسیس اور رپورٹیں</h3>
-            <p className="mt-4 text-sm md:text-base">انوسیس تیار کریں، پرنٹ کریں، اور کلائنٹس کو بھیجیں۔</p>
+            <h3 className="text-xl md:text-2xl font-bold text-green-700 text-center">انوسیس اور رپورٹیں</h3>
+            <p className="mt-4 text-sm md:text-base text-center">انوسیس تیار کریں، پرنٹ کریں، اور کلائنٹس کو بھیجیں۔</p>
           </div>
         </div>
       </section>

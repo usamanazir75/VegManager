@@ -9,7 +9,7 @@ const Header = ({ isLoggedIn }) => {
   };
 
   return (
-    <header className="bg-green-600 text-white p-4 shadow-lg fixed top-0 w-full z-50">
+    <header className="bg-green-600 text-white p-4 shadow-lg fixed top-0 w-full z-50 header-styles">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Wrap the header title with a Link component */}
         <Link to="/" className="text-2xl font-bold">
